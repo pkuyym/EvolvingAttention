@@ -20,7 +20,7 @@ Classification: (http://www.timeseriesclassification.com/Downloads/Archives/Mult
 Regression: (https://zenodo.org/record/3902651#.YB5P0OpOm3s)
 
 ## Train model command example
-  python src/main.py --task regression --data AppliancesEnergy --epochs 100 --model EACausalConv --gpu 0 --isdilated TRUE 
+  python src/main.py --task regression --data AppliancesEnergy --epochs 100 --model EACausalConv --gpu 0 --isdilated TRUE --alpha 0.5 --beta 0.3 --k 0.25 --v 0.25 --d_model 128
 
 ## License
 

@@ -1065,10 +1065,10 @@ class TSEACausalConvEncoderClassiregressor(nn.Module):
             output: (batch_size, num_classes)
         """
         X[~padding_masks]=0
-        inp = self.project_inp(X) * math.sqrt(
+        inp = self.project_inp(X.permute(1, 0, 2)) * math.sqrt(
             self.d_model) 
         inp = self.pos_enc(inp)
-        inp = inp.permute(0, 2, 1)
+        inp = inp.permute(1,2,0)
         output, att = self.TSEACausalCnn(inp, None)  #(batch_size, feat_dim_out, seq_len_out)
        
         output = output.permute(0, 2, 1)  #(batch_size, seq_len_out, feat_dim_out)

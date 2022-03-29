@@ -9,7 +9,7 @@ This repository contains the implementation of the model proposed in [Evolving A
 The implementation is mainly adapted from the TF Official Models repo. Please specify your directory that contains the imagenet and the output directory in the `train.sh`, and then conduct the training by execute `sh -x train.sh`.
 
 # EA-DC-Transformer
-Our requirements and dataset setting refers to to the paper: George Zerveas et al. [A Transformer-based Framework for Multivariate Time Series Representation Learning] , in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21), August 14-18, 2021. ArXiV version: (https://arxiv.org/abs/2010.02803)
+Our requirements and dataset setting refers to the paper: George Zerveas et al. [A Transformer-based Framework for Multivariate Time Series Representation Learning] , in Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD '21), August 14-18, 2021. ArXiV version: (https://arxiv.org/abs/2010.02803)
 
 ## Requirements
 The recommended requirements can be installed by: pip install -r requirements.txt
